@@ -1,39 +1,177 @@
+@font-face {
+  font-family: Month;
+  src: url(./FONTS/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  margin: 2rem 8rem;
+}
+main form {
+  width: 90%;
+}
+main section,
+main aside {
+  width: 45%;
 }
 
-section,
-aside {
-  border: 2px solid red;
-  width: 40%;
-}
-
-header {
+h1 {
   text-align: center;
+  font-size: 2rem;
+  font-family: Month;
+  font-weight: 700px;
+  margin: 10px;
 }
 
 .contact input,
-.address input {
+.address input,
+select,
+.postcode input {
   border: 1px solid #828282;
-  padding: 20px 5px 20px 35px;
+  padding: 8px 5px 8px 35px;
   color: #828282;
   font-size: 14px;
   border-radius: 5px;
-  width: 80%;
+  width: 100%;
+}
+
+.contact h3,
+.address h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  font-family: Month;
+}
+
+.address {
+  margin: 50px 0 20px 0;
+}
+
+label {
+  font-family: Month;
+  font-size: 12px;
 }
 
 .campo {
   position: relative;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
-i {
+.campo i {
   position: absolute;
   color: #828282;
   font-size: 16px;
-  top: 39%;
+  top: 27%;
   left: 2%;
+}
+
+.country-post {
+  display: flex;
+  gap: 0.5rem;
+}
+.country-post .country {
+  width: 35%;
+}
+.country-post .postcode {
+  width: 55%;
+}
+
+.elements {
+  background-color: #eeeeee;
+  width: 22rem;
+  border-radius: 10px;
+  padding: 20px 30px 0 20px;
+  font-family: Month;
+}
+.elements h3 {
+  font-size: 16px;
+}
+.elements .price {
+  font-size: 16px;
+  color: #f2994a;
+}
+.elements .exprice {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: black;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.right img {
+  width: 7rem;
+  border-radius: 10px;
+}
+.right .buttons {
+  display: flex;
+  border: 1px solid #888888;
+  justify-content: space-around;
+  width: 6rem;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 2rem;
+  text-align: center;
+}
+.right .buttons button {
+  border-radius: 5px;
+  border: none;
+  background-color: #e0e0e0;
+  padding: 5px;
+}
+.right .buttons p {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.shoes {
+  margin-bottom: 3rem;
+}
+
+.top {
+  padding: 5px 30px 10px 10px;
+}
+
+.top1 {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+  font-family: Month;
+  padding-bottom: 10px;
+}
+
+.continue {
+  margin-left: 44%;
+  width: 5rem;
+  padding: 14px 0;
+  border-radius: 10px;
+  background-color: #f2994a;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  main section,
+main aside,
+main form {
+    width: 22rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

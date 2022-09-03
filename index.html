@@ -13,9 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <h1>Checkout</h1>
-    </header>
+    <h1>Checkout</h1>
+
     <main>
         <section>
             <form action="">
@@ -53,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="campo">
+                <div class="country-post">
                     <div class="country">
                         <label for="country">Country</label>
 
@@ -72,57 +71,72 @@
                     <div class="postcode">
                         <label for="postCode">Post Code</label>
                         <div class="campo">
-                            <input type="number" name="postCode" id="postCode" placeholder="Enter your post code..." />
+                            <input type="text" name="postCode" id="postCode" placeholder="Enter your post code..." />
                             <i class="fa-solid fa-envelopes-bulk"></i>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <input type="checkbox" name="see" id="see">
+                    <input type="checkbox" name="see" id="see" />
                     <label for="see">See this information next time</label>
                 </div>
             </form>
         </section>
 
         <aside>
-            <div class="bag">
-                <div><img src="./IMG/photo1.png" alt="" /></div>
-                <div>
-                    <h3>Vintage Backbag</h3>
-                    <p>$54.99 <span>$94.99</span></p>
+
+            <div class="elements">
+
+                <div class="right bag">
+                    <div><img src="./IMG/photo1.png" alt="" /></div>
                     <div>
-                        <button><i class="fa-solid fa-minus"></i></button>
-                        <p>1</p>
-                        <button><i class="fa-solid fa-plus"></i></button>
+                        <h3>Vintage Backbag</h3>
+                        <p class="price">$54.99 <span class="exprice">$94.99</span></p>
+                        <div class="buttons">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <p>1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="shoes">
-                <div><img src="./IMG/photo2.png" alt="" /></div>
-                <div>
-                    <h3>Vintage Backbag</h3>
-                    <p>$74.99 <span>$124.99</span></p>
+
+
+                <div class="right shoes">
+                    <div><img src="./IMG/photo2.png" alt="" /></div>
                     <div>
-                        <button><i class="fa-solid fa-minus"></i></button>
-                        <p>1</p>
-                        <button><i class="fa-solid fa-plus"></i></button>
+                        <h3>Vintage Backbag</h3>
+                        <p class="price">$74.99 <span class="exprice">$124.99</span></p>
+                        <div class="buttons">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <p>1</p>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
                     </div>
                 </div>
+
+                <div class="top">
+
+                    <div class="top1">
+                        <p>Shipping</p>
+                        <p>$19</p>
+                    </div>
+
+                    <div class="top1">
+                        <p>Total</p>
+                        <p>$148.98</p>
+                    </div>
+                </div>
+
+
+
             </div>
 
-            <div>
-                <p>Shipping</p>
-                <p>$19</p>
-            </div>
 
-            <div>
-                <p>Total</p>
-                <p>$148.98</p>
-            </div>
+
         </aside>
     </main>
 
-    <button>Continue</button>
+    <button class="continue">Continue</button>
 </body>
 
 </html>
